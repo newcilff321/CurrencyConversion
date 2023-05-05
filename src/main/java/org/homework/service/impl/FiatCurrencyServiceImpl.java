@@ -1,23 +1,19 @@
 package org.homework.service.impl;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.homework.data.FiatCurrencyResponseData;
 import org.homework.data.FiatCurrencyUpdateMainRequestData;
 import org.homework.data.FiatCurrencyUpdateRequestData;
 import org.homework.model.FiatCurrency;
 import org.homework.repository.FiatCurrencyDao;
 import org.homework.service.FiatCurrencyService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
